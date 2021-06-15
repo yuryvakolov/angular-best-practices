@@ -1,0 +1,27 @@
+@import "src/styles/theme";
+@import "src/styles/templates";
+@import "src/styles/functions";
+
+.wrapper {
+  padding: 0 px2em(20);
+  height: px2em(40);
+  background-color: $color-white;
+  @extend %d-flex-between;
+
+  .title  {
+    font: {
+      family: 'Roboto';
+      size: px2em(20);
+    };
+  }
+
+  .left-block, .right-block {
+    @extend %d-flex-between;
+  }
+
+  .right-block {
+    span {
+      padding: 0 px2em(10);
+    }
+  }
+}
