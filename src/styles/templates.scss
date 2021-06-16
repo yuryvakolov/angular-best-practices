@@ -1,11 +1,36 @@
-%d-flex-center {
+//Flexbox
+%d-flex-align-center {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+%d-flex-start {
+  @extend %d-flex-align-center;
+  justify-content: flex-start;
+}
+
+%d-flex-center {
+  @extend %d-flex-align-center;
+  justify-content: center;
+}
+
 %d-flex-between {
-  display: flex;
+  @extend %d-flex-align-center;
   justify-content: space-between;
-  align-items: center;
+}
+
+%d-flex-column-between {
+  @extend %d-flex-between;
+  flex-direction: column;
+}
+
+%d-flex-column-center {
+  @extend %d-flex-center;
+  flex-direction: column;
+}
+
+//Grids
+%d-grid {
+  height: 100%;
+  display: grid;
 }

@@ -21,6 +21,7 @@
       true,
       "rxjs/Rx"
     ],
+    "import-destructuring-spacing": true,
     "import-spacing": true,
     "indent": {
       "options": [
