@@ -1,8 +1,9 @@
 <div class="wrapper">
   <div class="left-block">
+    <svg-icon [name]="logoIcon"></svg-icon>
     <span class="title">{{title}}</span>
   </div>
   <div class="right-block">
-    <div class="icon" *ngFor="let icon of [1, 2, 3, 4, 5]">Icon {{icon}}</div>
+      <svg-icon width="20" height="20" *ngFor="let icon of rightIcons" [name]=icon></svg-icon>
   </div>
 </div>

@@ -15,15 +15,20 @@
   .left-block {
     @extend %d-flex-between;
     margin-left: $lg-screen-gutter;
+
+    svg-icon {
+      margin-right: px2em(10);
+    }
   }
 
   .right-block {
     @extend %d-flex-between;
     width: auto;
     margin-right: $lg-screen-gutter;
-    .icon {
-      width: px2em(60);
-      margin: 0 px2em(8);
+
+    svg-icon {
+      margin-right: px2em(20);
     }
+
   }
 }

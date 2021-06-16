@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ICONS } from '../svg-icon/icons-list';
 
 @Component({
   selector: 'shared-header',
@@ -7,8 +8,23 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   private _title: string;
+  private _logo = ICONS.ADD;
+  private _rightIcons = [
+    ICONS.SEARCH,
+    ICONS.CURSOR,
+    ICONS.BELL,
+    ICONS.LIST,
+  ];
 
   constructor() {
+  }
+
+  get logoIcon(): ICONS {
+    return this._logo;
+  }
+
+  get rightIcons(): ICONS[] {
+    return this._rightIcons;
   }
 
   @Input()
