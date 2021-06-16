@@ -1,8 +1,12 @@
 <div class="grid-container">
   <shared-header [title]="title"></shared-header>
-  <settings-page></settings-page>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
   <footer>
     <span>Footer</span>
   </footer>
 </div>
+
+
 

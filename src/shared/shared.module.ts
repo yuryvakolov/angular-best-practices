@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
-import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
+import { HeaderComponent } from 'src/shared/components/header/header.component';
+import { SvgIconComponent } from 'src/shared/components/svg-icon/svg-icon.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({

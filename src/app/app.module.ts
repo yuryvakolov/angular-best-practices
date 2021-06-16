@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SettingsPageModule } from '../settings-page/settings-page.module';
-import { SharedModule } from '../shared/shared.module';
-import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AuthModule } from 'src/layouts/auth/auth.module';
+import { UserModule } from 'src/layouts/user/user.module';
+
+import { AppComponent } from 'src/app/app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,11 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    CommonModule,
     AppRoutingModule,
-    SettingsPageModule,
-    SharedModule,
+    AuthModule,
+    UserModule,
+    BrowserAnimationsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

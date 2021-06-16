@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from 'src/app/app.component';
+import { UserLayoutComponent } from './user-layout.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,14 +9,20 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        UserLayoutComponent
       ],
     }).compileComponents();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(UserLayoutComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
+  });
+
+  it(`should have as title 'Angular Best Practices'`, () => {
+    const fixture = TestBed.createComponent(UserLayoutComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('Angular Best Practices');
   });
 });

@@ -1,4 +1,5 @@
 export enum ICONS {
+  ANGULAR = 'angular',
   ADD = 'add',
   SEARCH = 'search',
   CURSOR = 'cursor',
