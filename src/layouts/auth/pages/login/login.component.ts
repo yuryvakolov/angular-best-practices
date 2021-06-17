@@ -10,7 +10,8 @@ export class LoginComponent {
     this.formData = {
       title: 'Sign In',
       oppositeFormName: 'Sign Up',
-      oppositeFormLink: '/register'
+      oppositeFormLink: '/register',
+      submitButtonLink: '/user'
     };
   }
 

@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthFormData } from 'src/layouts/auth/models/interfaces';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'auth-form',
@@ -10,7 +11,7 @@ import { AuthFormData } from 'src/layouts/auth/models/interfaces';
 export class AuthFormComponent implements OnInit {
   private _data: AuthFormData;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
   }
 
   @Input()
@@ -32,8 +33,8 @@ export class AuthFormComponent implements OnInit {
     });
   }
 
-  onSubmit(): void {
-    console.log('On Submit');
+  async onSubmit(): Promise<void> {
+    await this.router.navigateByUrl(this.data.submitButtonLink);
   }
 
   getErrorMessage(controlName: string): string {
