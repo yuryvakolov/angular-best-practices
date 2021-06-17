@@ -26,3 +26,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - To automatically convert `px` to `em`, you need to create a function `px2em(14)`. Documentation: [SCSS Functions](https://css-tricks.com/snippets/sass/px-to-em-functions/).
 - To inherit styles, you must use the `@extentd` directive. Documentation: [SCSS Directive @extend](https://sass-scss.ru/documentation/pravila_i_direktivi/kak_eto_rabotaet/).
 - To create a template selector, you must use the syntax `%selector`. Documentation: [SCSS Template selectors %](https://sass-scss.ru/documentation/rasshirenie_css/shablonnie_selektori/).
+
+## CI/CD
+
+- Used package angular-cli-ghpages for deploy from Angular CLI to GitHub Pages. For installl `npm i angular-cli-ghpages`
