@@ -28,4 +28,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         npm install
-        npm run ng -- deploy --base-href=/angular-best-practices/ --name="yuryvakolov" --email=yuryvakolov@yandex.ru
+        npm run ng -- deploy --base-href=https://github.com/yuryvakolov/angular-best-practices --name="yuryvakolov" --email=yuryvakolov@yandex.ru
