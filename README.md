@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## CI/CD
 
-- Used package angular-cli-ghpages for deploy from Angular CLI to GitHub Pages. For installl `npm i angular-cli-ghpages`
+- Used package angular-cli-ghpages for deploy from Angular CLI to GitHub Pages. For installl `npm i angular-cli-ghpages`. Documentation: [angular-cli-ghpages](https://www.npmjs.com/package/angular-cli-ghpages)
